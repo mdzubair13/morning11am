@@ -38,6 +38,10 @@ public class Demo {
 			List<WebElement> tables = driver.findElements(By.tagName("table"));
 			
 			System.out.println(tables.size());
+			int a=10;
+			if (a==10) {
+				System.out.println(10);
+			}
 			
 			
 		
