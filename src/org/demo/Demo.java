@@ -43,7 +43,9 @@ public class Demo {
 				System.out.println(10);
 			}
 			
-			
+			for (int i = 0; i < args.length; i++) {
+				
+			}
 		
 		}
 	
