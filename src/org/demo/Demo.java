@@ -24,30 +24,30 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Demo {
-		public static void main(String[] args)  {
-			
-			
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\zubee\\ClassWorkSpace\\Selenium11am\\driver\\chromedriver.exe");
-		
-			WebDriver driver= new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			
-			driver.get("https://www.w3schools.com/html/html_tables.asp");
-			
-			List<WebElement> tables = driver.findElements(By.tagName("table"));
-			
-			System.out.println(tables.size());
-			int a=10;
-			if (a==10) {
-				System.out.println(10);
-			}
-			
-			for (int i = 0; i < args.length; i++) {
-				
-			}
-		
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\zubee\\ClassWorkSpace\\Selenium11am\\driver\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		driver.get("https://www.w3schools.com/html/html_tables.asp");
+
+		List<WebElement> tables = driver.findElements(By.tagName("table"));
+
+		System.out.println(tables.size());
+		int a = 10;
+		if (a == 10) {
+			System.out.println(10);
 		}
-	
-	
+		for (int i = 0; i < args.length; i++) {
+
+		}
+
+		System.out.println("Final");
+
+	}
+
 }
